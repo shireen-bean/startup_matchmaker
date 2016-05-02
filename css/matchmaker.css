@@ -1,0 +1,231 @@
+/* 
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/*******************************************/
+
+/* Center the container */
+#container {
+	width: 960px;
+	margin: auto;
+}
+
+header {
+     height: 10em;
+     width: 100%;
+     border: 2px solid black;
+     background-color: black;
+     padding-left: 2em;
+     padding-right: 2em;
+     border-bottom: 4px solid yellow;
+}
+
+h1{
+     color: yellow;
+     font-family: 'Merriweather';
+}
+
+h1 a{
+    text-decoration: none;
+    color: yellow;
+}
+
+nav{
+     text-align: right;
+}
+
+nav li{
+     list-style: none;
+     display: inline-block;
+}
+
+nav a{
+     text-decoration: none;
+     color: white;
+     font-size: 1.25em;
+     padding: 0.5em 0.5em;
+}
+
+header .nav-major{
+     text-transform: uppercase;
+     font-weight: bold;
+     font-family: 'Oswald';
+}
+
+#tagline{
+     height:3em;
+     font-style: italic;
+     font-weight: bold;
+     font-size: 2em;
+     text-align: center;
+     background-color: rgb(150, 150, 150);
+     font-family: 'Merriweather';
+}
+
+#tagline p{
+     margin: 0;
+     padding-top: 2%;
+}
+
+#taste{
+     color: rgb(100, 100, 100);
+     text-decoration: line-through;
+}
+
+#are{
+     border-bottom: 2px solid yellow;
+}
+
+#main-image{
+     width: 100%;
+     height: 40em;
+     background-image: url("../images/coworking.jpg");
+}
+
+#main-image aside{
+     width: 25em;
+     height: 30em;
+     position: relative;
+     top: 10%;
+     left: 63%;
+     background-color: rgba(200,200,200, 0.8); 
+     font-family: 'Source Sans Pro';
+     padding-left: 3%;
+     padding-right: 4%;
+     padding-top: 2%;
+     box-shadow: 5px 5px 5px 5px rgba(0,0,0,.2)
+}
+
+h2{
+     font-size: 30px;
+}
+
+h4{
+     font-size: 28px;
+}
+
+
+section{
+     width: 33.3333%;
+     height: 25em;
+     float: left;
+     font-size: 12px;
+}
+
+section p{
+     font-size: 1.5em;
+     font-family: 'Source Sans Pro';
+}
+
+section + section{
+     font-family: 'Merriweather';
+     padding-left: 3%;
+     padding-right: 4%;
+     margin-top: 5%;
+     margin-bottom: 5%;
+}
+
+.button {
+     width: 80%;
+     margin-right: auto;
+     margin-left: auto;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    background: yellow;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    border-radius: 5px;
+}
+
+section + section + section{
+     border-right: 3px solid rgb(150, 150, 150);
+     border-left: 3px solid rgb(150, 150, 150);
+}
+
+section + section + section + section{
+     border: none;
+}
+
+section + section > .button{
+     background: rgb(120,120,120);
+}
+
+footer {
+     clear: both;
+     height: 4em;
+     color: white;
+     background-color: black;
+     padding-top: 2em;
+     padding-bottom: 3em;
+     padding-left: 3em;
+     font-family: 'Source Sans Pro';
+}
+
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+
+
+
